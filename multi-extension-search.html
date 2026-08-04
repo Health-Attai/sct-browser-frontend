@@ -525,7 +525,7 @@
                 path: '/browser/i18n/',
                 mode: 'both',
                 language: language,
-                cache: loadedLanguages.includes(language) ? true : false
+                cache: false
             });
             $(".i18n").each(function(index) {
                 var translation = jQuery.i18n.prop($(this).attr('data-i18n-id'));
@@ -569,7 +569,7 @@
                     path: '/browser/i18n/',
                     mode: 'both',
                     language: language,
-                    cache: true
+                    cache: false
                 });
                 loadedLanguages.push(language);
             }
